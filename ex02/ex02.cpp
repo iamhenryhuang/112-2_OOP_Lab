@@ -5,18 +5,15 @@
 
 using namespace std;
 
-// Alternative string multiplication function
-string multiplyStr(string num1, string num2) {
-    if (num1 == "0" || num2 == "0") return "0"; // If either number is 0, the result is 0.
+string multiply(string num1, string num2) {
+    if (num1 == "0" || num2 == "0") return "0";
 
     int length1 = num1.size(), length2 = num2.size();
     vector<int> result(length1 + length2, 0); // Result can have at most len1 + len2 digits.
 
-    // Reverse both strings to simplify the multiplication and carry handling.
     reverse(num1.begin(), num1.end());
     reverse(num2.begin(), num2.end());
 
-    // Perform multiplication
     for (int i = 0; i < length1; i++) {
         for (int j = 0; j < length2; j++) {
             int digit1 = num1[i] - '0';
@@ -77,14 +74,10 @@ string subtract(const string& num1, const string& num2) {
     return result;
 }
 
-// String comparison function
 int compare(const string& num1, const string& num2) {
-    // First, compare based on the length of the strings
     if (num1.size() > num2.size()) {
-        // If num1 is longer than num2, then num1 is larger
         return 1;
     } else if (num1.size() < num2.size()) {
-        // If num1 is shorter than num2, then num2 is larger
         return -1;
     } else {
         // If the lengths are equal, compare lexicographically
@@ -98,20 +91,15 @@ int compare(const string& num1, const string& num2) {
             }
         }
     }
-    // If none of the above conditions are met, the numbers are equal
     return 0;
 }
 
-// Calculates twice the area of the triangle formed by two points and the origin
 string calculateArea(const string& x1, const string& y1, const string& x2, const string& y2) {
-    string area = subtract(multiplyStr(x1, y2), multiplyStr(x2, y1));
+    string area = subtract(multiply(x1, y2), multiply(x2, y1));
     return area;
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-
     int total;
     cin >> total;
     vector<pair<string, string>> points(total);
@@ -126,6 +114,7 @@ int main() {
     for (int i = 0; i < total; i++) {
         for (int j = i + 1; j < total; j++) {
             string area = calculateArea(points[i].first, points[i].second, points[j].first, points[j].second);
+            
             if (smallest.empty() || compare(smallest, area) > 0) {
                 smallest = area;
             }
