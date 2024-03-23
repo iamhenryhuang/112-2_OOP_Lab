@@ -1,0 +1,82 @@
+Input 1 :
+2
+Computer1
+CPU 5 9990
+GPU 4 15000
+SSD 5 3590
+Monitor 4 6990
+RAM 4 2990
+Computer2
+Monitor 4 5990
+GPU 5 18990
+SSD 3 2490
+CPU 4 7990
+RAM 5 3990
+
+Output 1 :
+Computer1
+CPU
+SSD
+GPU
+Monitor
+RAM
+Computer2
+GPU
+RAM
+CPU
+Monitor
+SSD
+
+
+Input 2 :
+4
+computer0
+RAM 17 4596
+SSD 50 3355
+CPU 26 5498
+Monitor 19 8483
+GPU 30 4120
+computer1
+RAM 22 3708
+GPU 8 8794
+CPU 31 3382
+Monitor 17 5889
+SSD 14 3689
+computer2
+GPU 7 356
+Monitor 32 8006
+RAM 37 9597
+CPU 39 730
+SSD 11 1879
+computer3
+RAM 45 6900
+SSD 20 8465
+CPU 8 7754
+Monitor 35 7086
+GPU 49 7617
+
+Output 2 :
+computer0
+SSD
+GPU
+CPU
+Monitor
+RAM
+computer2
+CPU
+RAM
+Monitor
+SSD
+GPU
+computer3
+GPU
+RAM
+Monitor
+SSD
+CPU
+computer1
+CPU
+RAM
+Monitor
+SSD
+GPU
