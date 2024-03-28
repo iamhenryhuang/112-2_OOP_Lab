@@ -1,0 +1,19 @@
+Input : 
+3
+Noel 19 1
+ASMR
+Pekora 18 3
+Game Cooking Singing
+Marine 17 2
+Singing Haisin
+
+Output :
+Person 1 info:
+Name: Pekora, Age: 18, Number of Hobbies: 3
+Hobbies: Game, Cooking, Singing
+Person 2 info:
+Name: Marine, Age: 17, Number of Hobbies: 2
+Hobbies: Singing, Haisin
+Person 3 info:
+Name: Noel, Age: 19, Number of Hobbies: 1
+Hobbies: ASMR
