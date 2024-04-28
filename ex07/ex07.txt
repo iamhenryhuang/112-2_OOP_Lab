@@ -1,0 +1,26 @@
+Input :
+100 300
+1 4 2 5 3 4 5 -1
+
+Output :
+JJBox now has 500 songs.
+NoseBook now has 905 friends.
+==========
+JJBox now has 505 songs.
+NoseBook now has 905 friends.
+==========
+JJBox now has 505 songs.
+NoseBook now has 905 friends.
+==========
+JJBox now has 505 songs.
+NoseBook now has 908 friends.
+==========
+JJBox now has 505 songs.
+NoseBook now has 908 friends.
+==========
+JJBox now has 510 songs.
+NoseBook now has 908 friends.
+==========
+JJBox now has 510 songs.
+NoseBook now has 911 friends.
+==========
