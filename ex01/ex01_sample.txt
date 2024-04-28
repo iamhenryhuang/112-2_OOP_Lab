@@ -1,0 +1,19 @@
+Input :
+3
+3
+000
+011
+011
+4
+0000
+0000
+0100
+1110
+2
+11
+11
+
+Output :
+SQUARE
+TRIANGLE
+SQUARE
