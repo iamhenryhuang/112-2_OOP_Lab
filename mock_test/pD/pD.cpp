@@ -1,3 +1,5 @@
+#include <iostream>
+
 template <typename T>
 class LinkedList {
 private:
@@ -115,3 +117,32 @@ public:
         tail = nullptr;
     }
 };
+
+// for test
+int main() {
+  LinkedList<char> list1;
+  LinkedList<char> list2;
+  int n,m;
+  std::cin >> n >> m;
+  for(int i = 0;i < n;i ++){
+          char x;
+          std::cin >> x;
+          list1.insert(x);
+  }
+  for(int i = 0;i < m;i ++){
+          char x;
+          std::cin >> x;
+          list2.insert(x);
+  }
+
+  std::cout << "List 1 contents:" << std::endl;
+  list1.traverse();
+  std::cout << std::endl << "List 2 contents:" << std::endl;
+  list2.traverse();
+  std::cout << std::endl << "Concatenating lists..." << std::endl;
+  list1 = list1 + list2;
+  std::cout << std::endl << "List 1 contents after concatenation:" << std::endl;
+  list1.traverse();
+
+  return 0;
+}
